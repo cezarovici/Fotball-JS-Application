@@ -361,11 +361,19 @@
                 }
 
                 if (culoare_echipa) {
-            document.getElementById("colorFilter").value = culoare_echipa;
-            filterTableByColor(culoare_echipa)
-        }
+
+                    document.getElementById("colorFilter").value = culoare_echipa;
+                    document.title = `Noteaza ${culoare_echipa} din ${numar_editie}`
+                }
+                else {
+                    document.title = `Noteaza editia ${numar_editie}`
+
+                }
+
+                filterTableByColor(culoare_echipa)
             }
         }
+
 
 
         // Add an event listener to the color filter select element
@@ -374,7 +382,7 @@
         });
 
 
-   
+
 
 
         function filterTableByColor(selectedColor) {
