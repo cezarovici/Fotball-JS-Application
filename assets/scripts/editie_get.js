@@ -43,7 +43,7 @@ xhttp.onreadystatechange = function () {
     Object.keys(colorClasses).forEach(function (color) {
       columns[color] = [];
       console.log(color)
-      links[color] = (`https://cezarovici.github.io/noteaza_jucatori.htm?id=${numar_editie}&culoare_echipa=${colorClasses[color]}`)
+      links[color] = (`https://cezarovici.github.io/protected_all/noteaza_jucatori.htm?id=${numar_editie}&culoare_echipa=${colorClasses[color]}`)
     });
 
     console.log(links)
